@@ -108,7 +108,7 @@ function App() {
       console.log("Mining... please wait");
       await nftTxn.wait();
 
-      console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+      alert(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
     } catch (err) {
       console.log(err);
     }
